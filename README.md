@@ -2,7 +2,7 @@
 ![color:ff69b4](https://img.shields.io/badge/Language-JP-green) ![color:red](https://img.shields.io/github/downloads/rta-technology/add-tag-description-system/total)   
 Tag at the bottom of the Page with a description.
 
-# How to Install
+## How to Install
 1. Download a [zip](https://github.com/RTa-technology/add-tag-description-system/releases/tag/v0.1-alpha) file and unzip it to the local.
 2. Go to Chrome Extension.
 > * `chrome://extensions/`
@@ -23,7 +23,7 @@ Add tag description system
     └── manifest.json
 ```
 
-# インストール方法
+## インストール方法
 1. [zip](https://github.com/RTa-technology/add-tag-description-system/releases/tag/v0.1-alpha) fileをダウンロードし、ローカルに解凍してください。
 2. 拡張機能を開きます。chrome://extensions/
 3. `Developer mode`を有効にします。
