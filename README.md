@@ -22,3 +22,9 @@ Add tag description system
     │   └── background.js
     └── manifest.json
 ```
+
+# インストール方法
+1. [zip](https://github.com/RTa-technology/add-tag-description-system/releases/tag/v0.1-alpha) fileをダウンロードし、ローカルに解凍してください。
+2. 拡張機能を開きます。chrome://extensions/
+3. `Developer mode`を有効にします。
+4. `パッケージ化されていない拡張機能を読み込む`をクリックして、`src`というフォルダを選択します。
