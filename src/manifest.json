@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "Add tag discription system",
+  "version": "1.0.0",
+  "content_scripts": [{
+      "matches": ["http://pseudo-scp-jp.wikidot.com/*","http://scp-jp.wikidot.com/*","http://scp-jp-sandbox2.wikidot.com/*","http://*.wikidot.com/*"],
+      "js": ["js/content.js"],
+      "run_at": "document_end"
+    }],
+  "browser_action": {
+      "default_title": "system"
+  },
+  "icons": {
+      "48": "images/48.png",
+      "128": "images/128.png"
+    },
+  "background": {
+    "scripts": ["js/background.js"]
+  }
+}
