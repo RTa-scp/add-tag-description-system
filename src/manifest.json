@@ -3,7 +3,7 @@
   "name": "Add tag discription system",
   "version": "1.0.0",
   "content_scripts": [{
-      "matches": ["http://pseudo-scp-jp.wikidot.com/*","http://scp-jp.wikidot.com/*","http://scp-jp-sandbox2.wikidot.com/*","http://*.wikidot.com/*"],
+      "matches": ["http://scp-jp.wikidot.com/*","http://scp-jp-sandbox2.wikidot.com/*","http://*.wikidot.com/*","http://pseudo-scp-jp.wikidot.com/*"],
       "js": ["js/content.js"],
       "run_at": "document_end"
     }],
