@@ -1,7 +1,7 @@
 # Add tag description system
 Tag at the bottom of the Page with a description.
 
-# Install
+# How to Install
 1. Download a zip file and unzip it to the local.
 2. Go to Chrome Extension.
 > * `chrome://extensions/`
