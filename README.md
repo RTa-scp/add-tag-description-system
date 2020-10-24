@@ -1,4 +1,5 @@
 # Add tag description system
+![color:ff69b4](https://img.shields.io/badge/Language-JP-green) ![color:red](https://img.shields.io/github/downloads/rta-technology/add-tag-description-system/total)   
 Tag at the bottom of the Page with a description.
 
 # How to Install
