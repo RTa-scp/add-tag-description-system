@@ -15,7 +15,7 @@ Add tag description system
 └─ src <<<this!
     ├── image
     │   ├── 128.png
-    │   ├── 48.png
+    │   └── 48.png
     ├── js
     │   ├── content.js
     │   └── background.js
