@@ -20,6 +20,9 @@ Add tag description system
     ├── js
     │   ├── content.js
     │   └── background.js
+    ├── option
+    │   ├── option.js
+    │   └── option.html
     └── manifest.json
 ```
 
