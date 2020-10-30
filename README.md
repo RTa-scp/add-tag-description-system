@@ -3,7 +3,7 @@
 Tag at the bottom of the Page with a description.
 
 ## How to Install
-1. Download a [zip](https://github.com/RTa-technology/add-tag-description-system/releases/tag/v0.1-alpha) file and unzip it to the local.
+1. Download a [zip](https://github.com/RTa-technology/add-tag-description-system/releases/tag/v0.2-beta) file and unzip it to the local.
 2. Go to Chrome Extension.
 > * `chrome://extensions/`
 > * 　　`(config)` > `More tools` > `Extensions`
