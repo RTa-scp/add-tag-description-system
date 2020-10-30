@@ -18,9 +18,16 @@ function getIndex(value, arr, prop) {
     }
     return -1; //値が存在しなかったとき
 }
+  a();
+
+// ストレージから設定値を取得
+chrome.storage.sync.get(null, function(items) {       
+  selected_popposition = items.selected_popposition;
+  selected_popbc_color = items.selected_popbc_color;
+  selected_popcolor = items.selected_popcolor;
+});
 
 
-    a();
   var obj = document.querySelectorAll("div.page-tags  span > a");
   var length = obj.length;
   for(var i = 0; i < length;i++) {
@@ -30,12 +37,23 @@ function getIndex(value, arr, prop) {
  if(index!==-1){
    element.innerHTML =json[index].tag+'<br><span style="font-size:0.8em;max-width: unset;"><em>'+json[index].trans+"</em> ("+json[index].category+")</span><br>"+json[index].discription;
    element.className = "tooltip";
-   element.style = 'position: absolute; border: 1px solid black; background:white; white-space: break-spaces; padding: 1em; color: #333; font-size: 1.1em;margin:0.5em;';
+   if(selected_popcolor==undefined){
+   selected_popcolor="#333"
+   }
+   if(selected_popbc_color==undefined){
+   selected_popbc_color="#fff"
+   }
+   if(selected_popposition=="br"){
+   element.style = "position: fixed; border: 1px solid black; background:"+selected_popbc_color+"; white-space: break-spaces; padding: 1em; color:"+selected_popcolor+"; font-size: 1.1em;margin:0.5em;max-width: 50vw;z-index: 200;bottom:0;right:0;";
+   }
+   if(selected_popposition=="homing"||selected_popposition==undefined){
+   element.style = "position: absolute; border: 1px solid black; background:"+selected_popbc_color+"; white-space: break-spaces; padding: 1em; color:"+selected_popcolor+"; font-size: 1.1em;margin:0.5em;max-width: 50vw;z-index: 200;";
+   }
    this.appendChild(element);
  }else{
    element.innerHTML ="該当のタグは存在しません。";
    element.className = "tooltip";
-   element.style = "position: absolute; border: 1px solid black; background:white; white-space: break-spaces; padding: 1em; color: #333; font-size: 1.1em;margin:0.5em;";
+   element.style = "position: absolute; border: 1px solid black; background:white; white-space: break-spaces; padding: 1em; color: #333; font-size: 1.1em;margin: 0.5em;z-index: 200;";
    this.appendChild(element);
  }
    }

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Chrome Extension Options</title>
+  <style>
+    body: { padding: 1em; }
+  </style>
+</head>
+
+<body>
+<h1>Add tag description system: Option</h1>
+  　位置:
+  <select id="popposition">
+   <option value="homing">捕捉</option>
+   <option value="br">右下</option>
+  </select>
+<br>
+  　背景色:
+  <input id="popbc_color" placeholder="例:white, #fff">
+<br>
+  　文字色:
+  <input id="popcolor" placeholder="例:black, #333">
+<br>
+  　<button id="save">保存</button>
+  
+  <div id="status"></div>
+
+
+  <script src="option.js"></script>
+</body>
+</html>

@@ -2,8 +2,9 @@
   "manifest_version": 2,
   "name": "Add tag discription system",
   "version": "1.0.0",
+  "permissions": ["storage"],
   "content_scripts": [{
-      "matches": ["http://scp-jp.wikidot.com/*","http://scp-jp-sandbox2.wikidot.com/*","http://*.wikidot.com/*","http://pseudo-scp-jp.wikidot.com/*"],
+      "matches": ["http://pseudo-scp-jp.wikidot.com/*","http://scp-jp.wikidot.com/*","http://scp-jp-sandbox2.wikidot.com/*","http://*.wikidot.com/*"],
       "js": ["js/content.js"],
       "run_at": "document_end"
     }],
@@ -16,5 +17,6 @@
     },
   "background": {
     "scripts": ["js/background.js"]
-  }
+  },
+  "options_page": "option/option.html"
 }
