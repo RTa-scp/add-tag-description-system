@@ -1,7 +1,17 @@
 
 var json;
 var json_trans;
-const DATA_URL = 'https://script.google.com/macros/s/AKfycbwJCGLDJtZeBQ9pmnFfb8xwiLbIA2Wd_8vB4WPiEXAyx214SbM/exec';
+var DATA_URL;
+var JP = 'https://script.google.com/macros/s/AKfycbwJCGLDJtZeBQ9pmnFfb8xwiLbIA2Wd_8vB4WPiEXAyx214SbM/exec';
+var EN = 'https://script.google.com/macros/s/AKfycbwJCGLDJtZeBQ9pmnFfb8xwiLbIA2Wd_8vB4WPiEXAyx214SbM/exec?lang=en';
+
+function lang(){
+  if (document.documentElement.lang === "en") {
+  DATA_URL = EN;
+}else if(document.documentElement.lang === "ja") {
+  DATA_URL = JP;
+}}
+lang();
 
 function a(){
   fetch(DATA_URL).then(function(response) {
