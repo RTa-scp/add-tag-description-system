@@ -1,5 +1,5 @@
 # Add tag description system
-![color:ff69b4](https://img.shields.io/badge/Language-JP-green) ![](https://img.shields.io/github/v/release/rta-technology/add-tag-description-system?include_prereleases) ![color:red](https://img.shields.io/github/downloads/rta-technology/add-tag-description-system/total)   
+![color:ff69b4](https://img.shields.io/badge/Language-JP/EN-green) ![](https://img.shields.io/github/v/release/rta-technology/add-tag-description-system?include_prereleases) ![color:red](https://img.shields.io/github/downloads/rta-technology/add-tag-description-system/total)   
 Tag at the bottom of the Page with a description.  
 → chrome Extension [Add tag description system](https://chrome.google.com/webstore/detail/add-tag-discription-syste/chihgmiknkmejndbpilmoopjlpfpjljg)
 
