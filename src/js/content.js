@@ -5,17 +5,20 @@ var errmsg;
 var JP = 'https://script.google.com/macros/s/AKfycbwJCGLDJtZeBQ9pmnFfb8xwiLbIA2Wd_8vB4WPiEXAyx214SbM/exec';
 var EN = 'https://script.google.com/macros/s/AKfycbwJCGLDJtZeBQ9pmnFfb8xwiLbIA2Wd_8vB4WPiEXAyx214SbM/exec?lang=en';
 var CN = 'https://script.google.com/macros/s/AKfycbwJCGLDJtZeBQ9pmnFfb8xwiLbIA2Wd_8vB4WPiEXAyx214SbM/exec?lang=cn';
-
+var catstyle;
 function lang() {
   if (document.documentElement.lang === "en") {
     DATA_URL = EN;
     errmsg = "The tag does not exist.";
+    catstyle = block;
   } else if (document.documentElement.lang === "ja") {
     DATA_URL = JP;
     errmsg = "該当のタグは存在しません。";
+    catstyle = block;
   } else if (document.documentElement.lang === "cn") {
     DATA_URL = CN;
     errmsg = "标签不存在。";
+    catstyle = none;
   }
 }
 lang();
@@ -50,7 +53,7 @@ for (var i = 0; i < length; i++) {
     var element = document.createElement("div");
     var index = getIndex(this.textContent, json, "tag");
     if (index !== -1) {
-      element.innerHTML = json[index].tag + '<br><span style="font-size:0.8em;max-width: unset;"><em>' + json[index].trans + "</em> (" + json[index].category + ")</span><br>" + json[index].discription;
+      element.innerHTML = json[index].tag + '<br><span style="font-size:0.8em;max-width: unset;"><em>' + json[index].trans + '</em><span style="display:'+catstyle+';"> (' + json[index].category + ")</span></span><br>" + json[index].discription;
       element.className = "tooltip";
       if (selected_popcolor == undefined) {
         selected_popcolor = "#333"
