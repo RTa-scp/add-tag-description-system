@@ -29,7 +29,7 @@ Add tag description system
 ```
 
 ## インストール方法
-1. [zip](https://github.com/RTa-technology/add-tag-description-system/releases/download/v3.0-alpha/add-tag-description-system.zip) fileをダウンロードし、ローカルに解凍してください。
+1. [zip](https://github.com/RTa-technology/add-tag-description-system/releases/download/v3.0-alpha/add-tag-description-system.zip」) fileをダウンロードし、ローカルに解凍してください。
 2. 拡張機能を開きます。chrome://extensions/
 3. `Developer mode`を有効にします。
 4. `パッケージ化されていない拡張機能を読み込む`をクリックして、`src`というフォルダを選択します。
