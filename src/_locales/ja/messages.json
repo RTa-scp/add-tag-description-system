@@ -1,6 +1,8 @@
-"Name": {
-    "message": "Add tag discription system"
-},
-"Description": {
-    "message": "Wikidot上でタグの上にマウスカーソルを置いた時、SCP-JP、SCP-EN、SCP-CN上のタグリストに記載されている説明を表示します。"
+{
+  "Name": {
+      "message": "Add tag discription system"
+  },
+  "Description": {
+      "message": "Wikidot上でタグの上にマウスカーソルを置いた時、SCP-JP、SCP-EN、SCP-CN上のタグリストに記載されている説明を表示します。"
+  }
 }

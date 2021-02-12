@@ -1,6 +1,8 @@
-"Name": {
-    "message": "Add tag discription system"
-},
-"Description": {
-    "message": "When you hover the mouse cursor over a tag on Wikidot, the description of the tag list on SCP-JP, SCP-EN and SCP-CN is displayed."
+{
+  "Name": {
+      "message": "Add tag discription system"
+  },
+  "Description": {
+      "message": "When you hover the mouse cursor over a tag on Wikidot, the description of the tag list on SCP-JP, SCP-EN and SCP-CN is displayed."
+  }
 }
