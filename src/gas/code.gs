@@ -277,7 +277,7 @@ function wikidotconvert(sentence) {
         sentence = sentence.replace(/\]\]\]/, "</a>");
       }
       if (sentence.indexOf("http") == -1) {
-        sentence = sentence.replace(/\[\[\[\*?/, '<a target="_blank" href="http://scp-jp.wikidot.com/');
+        sentence = sentence.replace(/\[\[\[\*?/, '<a target="_blank" href="/');
         sentence = sentence.replace(/\|/, '">');
         sentence = sentence.replace(/\]\]\]/, "</a>");
       }
@@ -294,7 +294,7 @@ function wikidotconvert(sentence) {
       if (sentence.indexOf("http") == -1) {
         var link = sentence.match(/\[\[\[(.+)\]\]\]/);
         if (link != null) {
-          sentence = sentence.replace(/\[\[\[\*?/, '<a target="_blank" href="http://scp-jp.wikidot.com/' + link[1] + '">');
+          sentence = sentence.replace(/\[\[\[\*?/, '<a target="_blank" href="/' + link[1] + '">');
           sentence = sentence.replace(/\]\]\]/, "</a>");
         }
       }
