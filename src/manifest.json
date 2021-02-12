@@ -6,7 +6,7 @@
   "description": "__MSG_Description__",
   "author": "RTa_technology",
   "homepage_url": "https://github.com/RTa-technology/add-tag-description-system",
-  "default_locale": "jp",
+  "default_locale": "ja",
 
   "permissions": ["storage"],
   "content_scripts": [{
