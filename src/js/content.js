@@ -10,11 +10,11 @@ function lang() {
   if (document.documentElement.lang === "en") {
     DATA_URL = EN;
     errmsg = "The tag does not exist.";
-    catstyle = "block";
+    catstyle = "inline-block";
   } else if (document.documentElement.lang === "ja") {
     DATA_URL = JP;
     errmsg = "該当のタグは存在しません。";
-    catstyle = "block";
+    catstyle = "inline-block";
   } else if (document.documentElement.lang === "cn") {
     DATA_URL = CN;
     errmsg = "标签不存在。";
@@ -53,7 +53,7 @@ for (var i = 0; i < length; i++) {
     var element = document.createElement("div");
     var index = getIndex(this.textContent, json, "tag");
     if (index !== -1) {
-      element.innerHTML = json[index].tag + '<br><span style="font-size:0.8em;max-width: unset;"><em>' + json[index].trans + '</em><span style="display:'+catstyle+';"> (' + json[index].category + ")</span></span><br>" + json[index].discription;
+      element.innerHTML = json[index].tag + '<br><span style="font-size:0.8em;max-width: unset;"><em>' + json[index].trans + '</em><span style="display:'+catstyle+';max-width: unset;"> (' + json[index].category + ")</span></span><br>" + json[index].discription;
       element.className = "tooltip";
       if (selected_popcolor == undefined) {
         selected_popcolor = "#333"
