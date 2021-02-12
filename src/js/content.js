@@ -10,15 +10,15 @@ function lang() {
   if (document.documentElement.lang === "en") {
     DATA_URL = EN;
     errmsg = "The tag does not exist.";
-    catstyle = block;
+    catstyle = "block";
   } else if (document.documentElement.lang === "ja") {
     DATA_URL = JP;
     errmsg = "該当のタグは存在しません。";
-    catstyle = block;
+    catstyle = "block";
   } else if (document.documentElement.lang === "cn") {
     DATA_URL = CN;
     errmsg = "标签不存在。";
-    catstyle = none;
+    catstyle = "none";
   }
 }
 lang();
