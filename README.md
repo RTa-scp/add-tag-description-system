@@ -1,5 +1,5 @@
 # Add tag description system
-![color:ff69b4](https://img.shields.io/badge/Language-JP/EN-green) ![](https://img.shields.io/github/v/release/rta-technology/add-tag-description-system?include_prereleases) ![color:red](https://img.shields.io/github/downloads/rta-technology/add-tag-description-system/total)   
+![color:ff69b4](https://img.shields.io/badge/Language-JP/EN/CN-green) ![](https://img.shields.io/github/v/release/rta-technology/add-tag-description-system?include_prereleases) ![color:red](https://img.shields.io/github/downloads/rta-technology/add-tag-description-system/total)   
 Tag at the bottom of the Page with a description.  
 → chrome Extension [Add tag description system](https://chrome.google.com/webstore/detail/add-tag-discription-syste/chihgmiknkmejndbpilmoopjlpfpjljg)
 
@@ -18,6 +18,7 @@ Add tag description system
     ├── image
     │   ├── 128.png
     │   └── 48.png
+    ... ... ...
     ├── js
     │   ├── content.js
     │   └── background.js
@@ -37,5 +38,7 @@ Add tag description system
 アクセスが集中すると困りますが、毎日4:05頃に更新されるjsonを置いておきますね。  
 ふとしたタイミングで消失する可能性はありますが、エラーが起きたら数日中に対処するようにはします。  
 なにかあっても自己責任でお願いいたします。  
-[json](https://script.google.com/macros/s/AKfycbwJCGLDJtZeBQ9pmnFfb8xwiLbIA2Wd_8vB4WPiEXAyx214SbM/exec)
+JP版[json](https://script.google.com/macros/s/AKfycbwJCGLDJtZeBQ9pmnFfb8xwiLbIA2Wd_8vB4WPiEXAyx214SbM/exec)  
+EN版[json](https://script.google.com/macros/s/AKfycbwJCGLDJtZeBQ9pmnFfb8xwiLbIA2Wd_8vB4WPiEXAyx214SbM/exec?lang=en)  
+CN版[json](https://script.google.com/macros/s/AKfycbwJCGLDJtZeBQ9pmnFfb8xwiLbIA2Wd_8vB4WPiEXAyx214SbM/exec?lang=cn)  
 
