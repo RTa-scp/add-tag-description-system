@@ -7,23 +7,23 @@ var catcn = [];
 var ca;
 var tag_num = [];
 var tag_ini = [
-  ['safe', '<em>scp</em>、<em>scp-jp</em>或いはそれらに類するタグが付けられた記事には<a href="/object-classes">オブジェクトクラス</a>のタグも付ける必要があります。二種類のオブジェクトクラスが併記してある過去のSCP報告書(例:safe/euclid)には、その両方のクラスがタグ付けされています。しかし、現在そのような報告書の作成は許可されていないため、これは当該記事が修正、もしくは削除されるまでの間、後世のためにのみ存在する形式です。', 'メジャータグ'],
-  ['euclid', '<em>scp</em>、<em>scp-jp</em>或いはそれらに類するタグが付けられた記事には<a href="/object-classes">オブジェクトクラス</a>のタグも付ける必要があります。二種類のオブジェクトクラスが併記してある過去のSCP報告書(例:safe/euclid)には、その両方のクラスがタグ付けされています。しかし、現在そのような報告書の作成は許可されていないため、これは当該記事が修正、もしくは削除されるまでの間、後世のためにのみ存在する形式です。', 'メジャータグ'],
-  ['keter', '<em>scp</em>、<em>scp-jp</em>或いはそれらに類するタグが付けられた記事には<a href="/object-classes">オブジェクトクラス</a>のタグも付ける必要があります。二種類のオブジェクトクラスが併記してある過去のSCP報告書(例:safe/euclid)には、その両方のクラスがタグ付けされています。しかし、現在そのような報告書の作成は許可されていないため、これは当該記事が修正、もしくは削除されるまでの間、後世のためにのみ存在する形式です。', 'メジャータグ'],
-  ['thaumiel', '<em>scp</em>、<em>scp-jp</em>或いはそれらに類するタグが付けられた記事には<a href="/object-classes">オブジェクトクラス</a>のタグも付ける必要があります。二種類のオブジェクトクラスが併記してある過去のSCP報告書(例:safe/euclid)には、その両方のクラスがタグ付けされています。しかし、現在そのような報告書の作成は許可されていないため、これは当該記事が修正、もしくは削除されるまでの間、後世のためにのみ存在する形式です。', 'メジャータグ'],
-  ['neutralized', '<em>scp</em>、<em>scp-jp</em>或いはそれらに類するタグが付けられた記事には<a href="/object-classes">オブジェクトクラス</a>のタグも付ける必要があります。二種類のオブジェクトクラスが併記してある過去のSCP報告書(例:safe/euclid)には、その両方のクラスがタグ付けされています。しかし、現在そのような報告書の作成は許可されていないため、これは当該記事が修正、もしくは削除されるまでの間、後世のためにのみ存在する形式です。', 'メジャータグ'],
-  ['esoteric-class', '<em>scp</em>、<em>scp-jp</em>或いはそれらに類するタグが付けられた記事には<a href="/object-classes">オブジェクトクラス</a>のタグも付ける必要があります。二種類のオブジェクトクラスが併記してある過去のSCP報告書(例:safe/euclid)には、その両方のクラスがタグ付けされています。しかし、現在そのような報告書の作成は許可されていないため、これは当該記事が修正、もしくは削除されるまでの間、後世のためにのみ存在する形式です。', 'メジャータグ'],
-  ['archived', 'SCPのサブクラスを表すタグです。通常のオブジェクトクラスタグと併記してください。もし特殊なオブジェクトクラスが割り振られている場合は<em>esoteric-class</em>タグをご利用ください。', 'メジャータグ'],
-  ['decommissioned', 'SCPのサブクラスを表すタグです。通常のオブジェクトクラスタグと併記してください。もし特殊なオブジェクトクラスが割り振られている場合は<em>esoteric-class</em>タグをご利用ください。', 'メジャータグ'],
-  ['joke', 'SCPのサブクラスを表すタグです。通常のオブジェクトクラスタグと併記してください。もし特殊なオブジェクトクラスが割り振られている場合は<em>esoteric-class</em>タグをご利用ください。', 'メジャータグ'],
-  ['白', 'SCP-FR記事を中心とした、"脅威レベル"が付与されている記事に使用されるタグです。"脅威レベル"の付与基準については<a href="http://ja.scp-wiki.net/niveaux-de-menace-des-objets-scp">SCPオブジェクトの脅威レベル</a>を参考にしてください。', 'SCP-JP用メジャータグ'],
-  ['青', 'SCP-FR記事を中心とした、"脅威レベル"が付与されている記事に使用されるタグです。"脅威レベル"の付与基準については<a href="http://ja.scp-wiki.net/niveaux-de-menace-des-objets-scp">SCPオブジェクトの脅威レベル</a>を参考にしてください。', 'SCP-JP用メジャータグ'],
-  ['緑', 'SCP-FR記事を中心とした、"脅威レベル"が付与されている記事に使用されるタグです。"脅威レベル"の付与基準については<a href="http://ja.scp-wiki.net/niveaux-de-menace-des-objets-scp">SCPオブジェクトの脅威レベル</a>を参考にしてください。', 'SCP-JP用メジャータグ'],
-  ['黄', 'SCP-FR記事を中心とした、"脅威レベル"が付与されている記事に使用されるタグです。"脅威レベル"の付与基準については<a href="http://ja.scp-wiki.net/niveaux-de-menace-des-objets-scp">SCPオブジェクトの脅威レベル</a>を参考にしてください。', 'SCP-JP用メジャータグ'],
-  ['橙', 'SCP-FR記事を中心とした、"脅威レベル"が付与されている記事に使用されるタグです。"脅威レベル"の付与基準については<a href="http://ja.scp-wiki.net/niveaux-de-menace-des-objets-scp">SCPオブジェクトの脅威レベル</a>を参考にしてください。', 'SCP-JP用メジャータグ'],
-  ['赤', 'SCP-FR記事を中心とした、"脅威レベル"が付与されている記事に使用されるタグです。"脅威レベル"の付与基準については<a href="http://ja.scp-wiki.net/niveaux-de-menace-des-objets-scp">SCPオブジェクトの脅威レベル</a>を参考にしてください。', 'SCP-JP用メジャータグ'],
-  ['黒', 'SCP-FR記事を中心とした、"脅威レベル"が付与されている記事に使用されるタグです。"脅威レベル"の付与基準については<a href="http://ja.scp-wiki.net/niveaux-de-menace-des-objets-scp">SCPオブジェクトの脅威レベル</a>を参考にしてください。', 'SCP-JP用メジャータグ'],
-  ['未定', 'SCP-FR記事を中心とした、"脅威レベル"が付与されている記事に使用されるタグです。"脅威レベル"の付与基準については<a href="http://ja.scp-wiki.net/niveaux-de-menace-des-objets-scp">SCPオブジェクトの脅威レベル</a>を参考にしてください。', 'SCP-JP用メジャータグ']
+  ['safe', '<em>scp</em>、<em>scp-jp</em>或いはそれらに類するタグが付けられた記事には<a href="/object-classes">オブジェクトクラス</a>のタグも付ける必要があります。二種類のオブジェクトクラスが併記してある過去のSCP報告書(例:safe/euclid)には、その両方のクラスがタグ付けされています。しかし、現在そのような報告書の作成は許可されていないため、これは当該記事が修正、もしくは削除されるまでの間、後世のためにのみ存在する形式です。', 'メジャータグ',,1],
+  ['euclid', '<em>scp</em>、<em>scp-jp</em>或いはそれらに類するタグが付けられた記事には<a href="/object-classes">オブジェクトクラス</a>のタグも付ける必要があります。二種類のオブジェクトクラスが併記してある過去のSCP報告書(例:safe/euclid)には、その両方のクラスがタグ付けされています。しかし、現在そのような報告書の作成は許可されていないため、これは当該記事が修正、もしくは削除されるまでの間、後世のためにのみ存在する形式です。', 'メジャータグ',,1],
+  ['keter', '<em>scp</em>、<em>scp-jp</em>或いはそれらに類するタグが付けられた記事には<a href="/object-classes">オブジェクトクラス</a>のタグも付ける必要があります。二種類のオブジェクトクラスが併記してある過去のSCP報告書(例:safe/euclid)には、その両方のクラスがタグ付けされています。しかし、現在そのような報告書の作成は許可されていないため、これは当該記事が修正、もしくは削除されるまでの間、後世のためにのみ存在する形式です。', 'メジャータグ',,1],
+  ['thaumiel', '<em>scp</em>、<em>scp-jp</em>或いはそれらに類するタグが付けられた記事には<a href="/object-classes">オブジェクトクラス</a>のタグも付ける必要があります。二種類のオブジェクトクラスが併記してある過去のSCP報告書(例:safe/euclid)には、その両方のクラスがタグ付けされています。しかし、現在そのような報告書の作成は許可されていないため、これは当該記事が修正、もしくは削除されるまでの間、後世のためにのみ存在する形式です。', 'メジャータグ',,1],
+  ['neutralized', '<em>scp</em>、<em>scp-jp</em>或いはそれらに類するタグが付けられた記事には<a href="/object-classes">オブジェクトクラス</a>のタグも付ける必要があります。二種類のオブジェクトクラスが併記してある過去のSCP報告書(例:safe/euclid)には、その両方のクラスがタグ付けされています。しかし、現在そのような報告書の作成は許可されていないため、これは当該記事が修正、もしくは削除されるまでの間、後世のためにのみ存在する形式です。', 'メジャータグ',,1],
+  ['esoteric-class', '<em>scp</em>、<em>scp-jp</em>或いはそれらに類するタグが付けられた記事には<a href="/object-classes">オブジェクトクラス</a>のタグも付ける必要があります。二種類のオブジェクトクラスが併記してある過去のSCP報告書(例:safe/euclid)には、その両方のクラスがタグ付けされています。しかし、現在そのような報告書の作成は許可されていないため、これは当該記事が修正、もしくは削除されるまでの間、後世のためにのみ存在する形式です。', 'メジャータグ',,1],
+  ['archived', 'SCPのサブクラスを表すタグです。通常のオブジェクトクラスタグと併記してください。もし特殊なオブジェクトクラスが割り振られている場合は<em>esoteric-class</em>タグをご利用ください。', 'メジャータグ',,1],
+  ['decommissioned', 'SCPのサブクラスを表すタグです。通常のオブジェクトクラスタグと併記してください。もし特殊なオブジェクトクラスが割り振られている場合は<em>esoteric-class</em>タグをご利用ください。', 'メジャータグ',,1],
+  ['joke', 'SCPのサブクラスを表すタグです。通常のオブジェクトクラスタグと併記してください。もし特殊なオブジェクトクラスが割り振られている場合は<em>esoteric-class</em>タグをご利用ください。', 'メジャータグ',,1],
+  ['白', 'SCP-FR記事を中心とした、"脅威レベル"が付与されている記事に使用されるタグです。"脅威レベル"の付与基準については<a href="http://ja.scp-wiki.net/niveaux-de-menace-des-objets-scp">SCPオブジェクトの脅威レベル</a>を参考にしてください。', 'SCP-JP用メジャータグ',,3],
+  ['青', 'SCP-FR記事を中心とした、"脅威レベル"が付与されている記事に使用されるタグです。"脅威レベル"の付与基準については<a href="http://ja.scp-wiki.net/niveaux-de-menace-des-objets-scp">SCPオブジェクトの脅威レベル</a>を参考にしてください。', 'SCP-JP用メジャータグ',,3],
+  ['緑', 'SCP-FR記事を中心とした、"脅威レベル"が付与されている記事に使用されるタグです。"脅威レベル"の付与基準については<a href="http://ja.scp-wiki.net/niveaux-de-menace-des-objets-scp">SCPオブジェクトの脅威レベル</a>を参考にしてください。', 'SCP-JP用メジャータグ',,3],
+  ['黄', 'SCP-FR記事を中心とした、"脅威レベル"が付与されている記事に使用されるタグです。"脅威レベル"の付与基準については<a href="http://ja.scp-wiki.net/niveaux-de-menace-des-objets-scp">SCPオブジェクトの脅威レベル</a>を参考にしてください。', 'SCP-JP用メジャータグ',,3],
+  ['橙', 'SCP-FR記事を中心とした、"脅威レベル"が付与されている記事に使用されるタグです。"脅威レベル"の付与基準については<a href="http://ja.scp-wiki.net/niveaux-de-menace-des-objets-scp">SCPオブジェクトの脅威レベル</a>を参考にしてください。', 'SCP-JP用メジャータグ',,3],
+  ['赤', 'SCP-FR記事を中心とした、"脅威レベル"が付与されている記事に使用されるタグです。"脅威レベル"の付与基準については<a href="http://ja.scp-wiki.net/niveaux-de-menace-des-objets-scp">SCPオブジェクトの脅威レベル</a>を参考にしてください。', 'SCP-JP用メジャータグ',,3],
+  ['黒', 'SCP-FR記事を中心とした、"脅威レベル"が付与されている記事に使用されるタグです。"脅威レベル"の付与基準については<a href="http://ja.scp-wiki.net/niveaux-de-menace-des-objets-scp">SCPオブジェクトの脅威レベル</a>を参考にしてください。', 'SCP-JP用メジャータグ',,3],
+  ['未定', 'SCP-FR記事を中心とした、"脅威レベル"が付与されている記事に使用されるタグです。"脅威レベル"の付与基準については<a href="http://ja.scp-wiki.net/niveaux-de-menace-des-objets-scp">SCPオブジェクトの脅威レベル</a>を参考にしてください。', 'SCP-JP用メジャータグ',,3]
 ];
 //  var tag_inien=[['cupid2021','Of or related to the <a href="http://www.scpwiki.com/cupid-contest-2021">Cupid Contest 2021</a>.','Other Tags']];//
 　
@@ -66,10 +66,10 @@ function main() {
   //コードA4｜2行目以下のデータを削除
   sheetjp.getRange(1, 1, lastrowjp, 4).clear();
   //コードA14｜product_listに格納された配列の値を8行目以下に貼り付け
-  sheetjp.getRange(2, 1, tagsjp.length, tagsjp[0].length).setValues(tagsjp);
+  sheetjp.getRange(2, 1, tagsjp.length, tagsjp[0].length).setNumberFormat('@').setValues(tagsjp);
   //コードA3｜最終行の取得
   lastrowjp = sheetjp.getLastRow();
-  sheetjp.getRange(lastrowjp + 1, 1, tag_ini.length, tag_ini[0].length).setValues(tag_ini);
+  sheetjp.getRange(lastrowjp + 1, 1, tag_ini.length, tag_ini[0].length).setNumberFormat('@').setValues(tag_ini);
   removeDuplicates(sheetnamejp);
   //コードA16｜セルA1
   sheetjp.getRange('A1').setValue("tag");
@@ -86,10 +86,10 @@ function main() {
   //コードA4｜2行目以下のデータを削除
   sheeten.getRange(1, 1, lastrowen, 4).clear();
   //コードA14｜product_listに格納された配列の値を8行目以下に貼り付け
-  sheeten.getRange(2, 1, tagsen.length, tagsen[0].length).setValues(tagsen);
+  sheeten.getRange(2, 1, tagsen.length, tagsen[0].length).setNumberFormat('@').setValues(tagsen);
   //コードA3｜最終行の取得
   lastrowen = sheeten.getLastRow();
-  sheeten.getRange(lastrowen + 1, 1, tag_inien.length, tag_inien[0].length).setValues(tag_inien);
+  sheeten.getRange(lastrowen + 1, 1, tag_inien.length, tag_inien[0].length).setNumberFormat('@').setValues(tag_inien);
   removeDuplicates(sheetnameen);
   //コードA16｜セルA1
   sheeten.getRange('A1').setValue("tag");
@@ -106,10 +106,10 @@ function main() {
   //コードA4｜2行目以下のデータを削除
   sheetcn.getRange(1, 1, lastrowcn, 4).clear();
   //コードA14｜product_listに格納された配列の値を8行目以下に貼り付け
-  sheetcn.getRange(2, 1, tagscn.length, tagscn[0].length).setValues(tagscn);
+  sheetcn.getRange(2, 1, tagscn.length, tagscn[0].length).setNumberFormat('@').setValues(tagscn);
   //コードA3｜最終行の取得
   lastrowcn = sheetcn.getLastRow();
-  sheetcn.getRange(lastrowcn + 1, 1, tag_inicn.length, tag_inicn[0].length).setValues(tag_inicn);
+  sheetcn.getRange(lastrowcn + 1, 1, tag_inicn.length, tag_inicn[0].length).setNumberFormat('@').setValues(tag_inicn);
   removeDuplicates(sheetnamecn);
   //コードA16｜セルA1
   sheetcn.getRange('A1').setValue("tag");
@@ -139,29 +139,21 @@ function jpparse(text, ret) { /*取得*/
     var text_split = [];
     text_split = text[i].split("\n");
     for (var j = 0; j < text_split.length; j++) {
-      var ogg = text_split[j].match(/\* \*\*\[\[\[\/system:page\-tags\/tag\/(.+)\|(.+)\]\]\]\*\*\s\-\s(.+)/);
+      var ogg = text_split[j].match(/\* \*\*\[\[\[\/system:page\-tags\/tag\/(.+)\|(.+)\]\]\]\*\*\s{0,2}?\-\s{0,2}?(.+)/);
       if (ogg != null) {
         if (ogg[1].indexOf("]]]**") == -1) {
-          tagsjp.push([ogg[2].trim().toLowerCase(), trasrateWikidotToHtml(wikidotconvert(ogg[3])), ca, ""]);
+          tagsjp.push([ogg[2].trim().toLowerCase(), trasrateWikidotToHtml(wikidotconvert(ogg[3])), ca, "", i]);
           //        Logger.log(ogg[1]);
         }
       }
-    }
-    var text_split = [];
-    text_split = text[i].split("\n");
-    for (var j = 0; j < text_split.length; j++) {
-      var ogg = text_split[j].match(/\* \*\*\[\[\[\/system:page\-tags\/tag\/(.+)\|(.+)\]\]\]\*\*\(\/\/(.+)\/\/\)\s\-\s(.+)/);
+      var ogg = text_split[j].match(/\* \*\*\[\[\[\/system:page\-tags\/tag\/(.+)\|(.+)\]\]\]\*\*\(\/\/(.+)\/\/\)\s{0,2}?\-\s{0,2}?(.+)/);
       if (ogg != null) {
-        tagsjp.push([ogg[2].trim().toLowerCase(), trasrateWikidotToHtml(wikidotconvert(ogg[4])), ca, ogg[3]]);
+        tagsjp.push([ogg[2].trim().toLowerCase(), trasrateWikidotToHtml(wikidotconvert(ogg[4])), ca, ogg[3], i]);
         //        Logger.log(ogg[1]);
       }
-    }
-    var text_split = [];
-    text_split = text[i].split("\n");
-    for (var j = 0; j < text_split.length; j++) {
-      var ogg = text_split[j].match(/\* \*\*\[\[\[\/system:page\-tags\/tag\/(.+)\|(.+)\]\]\]\*\*\/\/\((.+)\)\/\/\s\-\s(.+)/);
+      var ogg = text_split[j].match(/\* \*\*\[\[\[\/system:page\-tags\/tag\/(.+)\|(.+)\]\]\]\*\*\/\/\((.+)\)\/\/\s{0,2}?\-\s{0,2}?(.+)/);
       if (ogg != null) {
-        tagsjp.push([ogg[2].trim().toLowerCase(), trasrateWikidotToHtml(wikidotconvert(ogg[4])), ca, ogg[3]]);
+        tagsjp.push([ogg[2].trim().toLowerCase(), trasrateWikidotToHtml(wikidotconvert(ogg[4])), ca, ogg[3], i]);
         //        Logger.log(ogg[1]);
       }
     }
@@ -186,38 +178,26 @@ function enparse(text, ret) { /*取得*/
     var text_split = [];
     text_split = text[i].split("\n");
     for (var j = 0; j < text_split.length; j++) {
-      var ogg = text_split[j].match(/\*\*\[http:\/\/scp-wiki.wikidot.com\/system:page\-tags\/tag\/(.+)\s(.+)\]\*\*\s\-\s(.+)/);
+      var ogg = text_split[j].match(/\*\*\[http:\/\/scp-wiki.wikidot.com\/system:page\-tags\/tag\/(.+)\s(.+)\]\*\*\s{0,2}?\-\s{0,2}?(.+)/);
       if (ogg != null) {
         if (ogg[1].indexOf("]]]**") == -1) {
-          tagsen.push([ogg[2].trim().toLowerCase(), trasrateWikidotToHtml(wikidotconvert(ogg[3])), ca]);
+          tagsen.push([ogg[2].trim().toLowerCase(), trasrateWikidotToHtml(wikidotconvert(ogg[3])), ca,,i]);
           //        Logger.log(ogg[1]);
         }
       }
-    }
-    var text_split = [];
-    text_split = text[i].split("\n");
-    for (var j = 0; j < text_split.length; j++) {
-      var ogg = text_split[j].match(/\* \[http:\/\/scp-wiki.wikidot.com\/system:page\-tags\/tag\/(.+)\s(.+)\]\s\-\s(.+)/);
+      var ogg = text_split[j].match(/\* \[http:\/\/scp-wiki.wikidot.com\/system:page\-tags\/tag\/(.+)\s(.+)\]\s{0,2}?\-\s{0,2}?(.+)/);
       if (ogg != null) {
-        tagsen.push([ogg[2].trim().toLowerCase(), trasrateWikidotToHtml(wikidotconvert(ogg[3])), ca]);
+        tagsen.push([ogg[2].trim().toLowerCase(), trasrateWikidotToHtml(wikidotconvert(ogg[3])), ca,,i]);
         //        Logger.log(ogg[1]);
       }
-    }
-    var text_split = [];
-    text_split = text[i].split("\n");
-    for (var j = 0; j < text_split.length; j++) {
       var ogg = text_split[j].match(/\* \[http:\/\/scp-wiki.wikidot.com\/system:page\-tags\/tag\/(.+)\s(.+)\]:\s(.+)/);
       if (ogg != null) {
-        tagsen.push([ogg[2].trim().toLowerCase(), trasrateWikidotToHtml(wikidotconvert(ogg[3])), ca]);
+        tagsen.push([ogg[2].trim().toLowerCase(), trasrateWikidotToHtml(wikidotconvert(ogg[3])), ca,,i]);
         //        Logger.log(ogg[1]);
       }
-    }
-    var text_split = [];
-    text_split = text[i].split("\n");
-    for (var j = 0; j < text_split.length; j++) {
       var ogg = text_split[j].match(/\* \[#\s(.+)\]\s\-\s(.+)/);
       if (ogg != null) {
-        tagsen.push([ogg[1].trim().toLowerCase(), trasrateWikidotToHtml(wikidotconvert(ogg[2])), ca]);
+        tagsen.push([ogg[1].trim().toLowerCase(), trasrateWikidotToHtml(wikidotconvert(ogg[2])), ca,,i]);
         //        Logger.log(ogg[1]);
       }
     }
@@ -244,7 +224,7 @@ function cnparse(text, ret) { /*取得*/
     text_split = text.split("\n");
     Logger.log(text_split);
     for (var j = 0; j < text_split.length; j++) {
-      var ogg = text_split[j].match(/\*\*\[\*\/system:page\-tags\/tag\/(.+)\s(.+)\]\*\*\s\-\s(.+)/);
+      var ogg = text_split[j].match(/\*\*\[\*\/system:page\-tags\/tag\/(.+)\s(.+)\]\*\*\s{0,2}?\-\s{0,2}?(.+)/);
       // **[*/system:page-tags/tag/需更新 需更新]** - 译文与原文现时的版本不符，需要更新和修订的页面。在译文更新至最新版本后应移除此标签。
       if (ogg != null) {
         if (ogg[1].indexOf("]]]**") == -1) {
@@ -252,31 +232,31 @@ function cnparse(text, ret) { /*取得*/
           //        Logger.log(ogg[1]);
         }
       }
-      var ogg = text_split[j].match(/\*\*\[\*\/system:page\-tags\/tag\/(.+)\s(.+)\]\*\*\s\*\*\/\/\(\[\*http:\/\/.+\/system:page\-tags\/tag\/(.+)\s(.+)\]\)\/\/\*\*\s\-\s(.+)/);
+      var ogg = text_split[j].match(/\*\*\[\*\/system:page\-tags\/tag\/(.+)\s(.+)\]\*\*\s\*\*\/\/\(\[\*http:\/\/.+\/system:page\-tags\/tag\/(.+)\s(.+)\]\)\/\/\*\*\s{0,2}?\-\s{0,2}?(.+)/);
       // * ##38BBD7|（主要标签）##**[*/system:page-tags/tag/scp scp]** **//([*http://www.scp-wiki.net/system:page-tags/tag/scp scp])//** - 所有SCP条目。包括主系列、[[[scp-001|001提案]]]、[[[joke-scps|搞笑]]] (-J)、[[[scp-ex|已解明]]] (-EX)。
       if (ogg != null) {
         tagscn.push([ogg[2].trim().toLowerCase(), trasrateWikidotToHtml(wikidotconvert(ogg[5])), "", ogg[4].trim().toLowerCase()]);
         //        Logger.log(ogg[1]);
       }
-      var ogg = text_split[j].match(/\*\*\[\*\/system:page\-tags\/tag\/(.+)\s(.+)\]\*\*\s\*\*\/\/\(\[\*http:\/\/.+\/system:page\-tags\/tag\/(.+)\s(.+)\]\)\*\*\/\/\s\-\s(.+)/);
+      var ogg = text_split[j].match(/\*\*\[\*\/system:page\-tags\/tag\/(.+)\s(.+)\]\*\*\s\*\*\/\/\(\[\*http:\/\/.+\/system:page\-tags\/tag\/(.+)\s(.+)\]\)\*\*\/\/\s{0,2}?\-\s{0,2}?(.+)/);
       // * **[*/system:page-tags/tag/传承-fr 传承-fr]** **//([*http://fondationscp.wikidot.com/system:page-tags/tag/patrimoine-fr patrimoine-fr])**// - [[[patrimoine-francais-de-la-fondation-scp|SCP基金会传承条目合集-FR]]]的作品
       if (ogg != null) {
         tagscn.push([ogg[2].trim().toLowerCase(), trasrateWikidotToHtml(wikidotconvert(ogg[3])), "", ogg[4].trim().toLowerCase()]);
         //        Logger.log(ogg[1]);
       }
-      var ogg = text_split[j].match(/\*\*\[\*.+\/system:page\-tags\/tag\/(.+)\s(.+)\]\*\*\s\-\s(.+)/);
+      var ogg = text_split[j].match(/\*\*\[\*.+\/system:page\-tags\/tag\/(.+)\s(.+)\]\*\*\s{0,2}?\-\s{0,2}?(.+)/);
       // * **[*http://ja.scp-wiki.net/system:page-tags/tag/scp-jp scp-jp]** - 应改为使用“**scp**”与“**jp**”标签
       if (ogg != null) {
         tagscn.push([ogg[2].trim().toLowerCase(), trasrateWikidotToHtml(wikidotconvert(ogg[3])), "", ""]);
         //        Logger.log(ogg[1]);
       }
-      var ogg = text_split[j].match(/\*\*\[\/system:page\-tags\/tag\/(.+)\s(.+)\]\/\/\((.+)\)\/\/\*\*\s\-\s(.+)/);
+      var ogg = text_split[j].match(/\*\*\[\/system:page\-tags\/tag\/(.+)\s(.+)\]\/\/\((.+)\)\/\/\*\*\s{0,2}?\-\s{0,2}?(.+)/);
       // * **[*http://ja.scp-wiki.net/system:page-tags/tag/scp-jp scp-jp]** - 应改为使用“**scp**”与“**jp**”标签
       if (ogg != null) {
         tagscn.push([ogg[2].trim().toLowerCase(), trasrateWikidotToHtml(wikidotconvert(ogg[4])), "", ogg[3].trim().toLowerCase()]);
         //        Logger.log(ogg[1]);
       }
-      var ogg = text_split[j].match(/\*\*\[\/system:page\-tags\/tag\/(.+)\s(.+)\]\*\*\s\-\s(.+)/);
+      var ogg = text_split[j].match(/\*\*\[\/system:page\-tags\/tag\/(.+)\s(.+)\]\*\*\s{0,2}?\-\s{0,2}?(.+)/);
       if (ogg != null) {
         tagscn.push([ogg[2].trim().toLowerCase(), trasrateWikidotToHtml(wikidotconvert(ogg[3])), "", ""]);
         //        Logger.log(ogg[1]);
@@ -383,7 +363,9 @@ function trasrateWikidotToHtml(sentence) {
 
 function removeDuplicates(name) {
   var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(name);
-  sheet.getRange("A:D").removeDuplicates([1]); //A列の重複を削除
+  sheet.getRange("A:E").sort({column: 3, ascending: false}).removeDuplicates([1]);//A列の重複を降順で削除
+  sheet.getRange("A:E").sort({column: 5, ascending: true});
+  sheet.getRange('E1:E').clear();
 }
 //データ取得
 function getDatajp() {
@@ -490,10 +472,10 @@ function getDatacn() {
 // GETリクエスト処理
 function doGet(e) {
   //  getdata();
-  if (e.parameter.lang == "en") {
+  if (e.parameter.lang === "en") {
     var json = getDataen();
   }
-  if (e.parameter.lang == "cn") {
+  else if (e.parameter.lang === "cn") {
     var json = getDatacn();
   }
   else {
