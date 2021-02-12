@@ -1,10 +1,16 @@
 {
   "manifest_version": 2,
-  "name": "Add tag discription system",
-  "version": "1.0.0",
+  "name": "__MSG_Name__",
+  "version": "1.0.2",
+
+  "description": "__MSG_Description__",
+  "author": "RTa_technology",
+  "homepage_url": "https://github.com/RTa-technology/add-tag-description-system",
+  "default_locale": "jp",
+
   "permissions": ["storage"],
   "content_scripts": [{
-      "matches": ["http://pseudo-scp-jp.wikidot.com/*","http://scp-jp.wikidot.com/*","http://scp-jp-sandbox2.wikidot.com/*","http://*.wikidot.com/*"],
+      "matches": ["http://www.scp-wiki.net/*","http://*.wikidot.com/*"],
       "js": ["js/content.js"],
       "run_at": "document_end"
     }],
