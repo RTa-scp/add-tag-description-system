@@ -71,6 +71,7 @@ function main() {
   lastrowjp = sheetjp.getLastRow();
   sheetjp.getRange(lastrowjp + 1, 1, tag_ini.length, tag_ini[0].length).setNumberFormat('@').setValues(tag_ini);
   removeDuplicates(sheetnamejp);
+  sheetjp.insertRowBefore(1);
   //コードA16｜セルA1
   sheetjp.getRange('A1').setValue("tag");
   //コードA16｜セルB1
@@ -91,6 +92,7 @@ function main() {
   lastrowen = sheeten.getLastRow();
   sheeten.getRange(lastrowen + 1, 1, tag_inien.length, tag_inien[0].length).setNumberFormat('@').setValues(tag_inien);
   removeDuplicates(sheetnameen);
+  sheeten.insertRowBefore(1);
   //コードA16｜セルA1
   sheeten.getRange('A1').setValue("tag");
   //コードA16｜セルB1
@@ -111,6 +113,7 @@ function main() {
   lastrowcn = sheetcn.getLastRow();
   sheetcn.getRange(lastrowcn + 1, 1, tag_inicn.length, tag_inicn[0].length).setNumberFormat('@').setValues(tag_inicn);
   removeDuplicates(sheetnamecn);
+//  sheetcn.insertRowBefore(1);
   //コードA16｜セルA1
   sheetcn.getRange('A1').setValue("tag");
   //コードA16｜セルB1
@@ -178,19 +181,19 @@ function enparse(text, ret) { /*取得*/
     var text_split = [];
     text_split = text[i].split("\n");
     for (var j = 0; j < text_split.length; j++) {
-      var ogg = text_split[j].match(/\*\*\[http:\/\/scp-wiki.wikidot.com\/system:page\-tags\/tag\/(.+)\s(.+)\]\*\*\s{0,2}?\-\s{0,2}?(.+)/);
+      var ogg = text_split[j].match(/\*\*\[(?:http:\/\/scp-wiki.wikidot.com|http:\/\/www.scp\-wiki.net)\/system:page\-tags\/tag\/(.+)\s(.+)\]\*\*\s{0,2}?\-\s{0,2}?(.+)/);
       if (ogg != null) {
         if (ogg[1].indexOf("]]]**") == -1) {
           tagsen.push([ogg[2].trim().toLowerCase(), trasrateWikidotToHtml(wikidotconvert(ogg[3])), ca,,i]);
           //        Logger.log(ogg[1]);
         }
       }
-      var ogg = text_split[j].match(/\* \[http:\/\/scp-wiki.wikidot.com\/system:page\-tags\/tag\/(.+)\s(.+)\]\s{0,2}?\-\s{0,2}?(.+)/);
+      var ogg = text_split[j].match(/\* \[(?:http:\/\/scp-wiki.wikidot.com|http:\/\/www.scp\-wiki.net)\/system:page\-tags\/tag\/(.+)\s(.+)\]\s{0,2}?\-\s{0,2}?(.+)/);
       if (ogg != null) {
         tagsen.push([ogg[2].trim().toLowerCase(), trasrateWikidotToHtml(wikidotconvert(ogg[3])), ca,,i]);
         //        Logger.log(ogg[1]);
       }
-      var ogg = text_split[j].match(/\* \[http:\/\/scp-wiki.wikidot.com\/system:page\-tags\/tag\/(.+)\s(.+)\]:\s(.+)/);
+      var ogg = text_split[j].match(/\* \[(?:http:\/\/scp-wiki.wikidot.com|http:\/\/www.scp\-wiki.net)\/system:page\-tags\/tag\/(.+)\s(.+)\]:\s(.+)/);
       if (ogg != null) {
         tagsen.push([ogg[2].trim().toLowerCase(), trasrateWikidotToHtml(wikidotconvert(ogg[3])), ca,,i]);
         //        Logger.log(ogg[1]);
