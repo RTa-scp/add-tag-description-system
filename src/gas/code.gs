@@ -224,7 +224,6 @@ function cnparse(text, ret) { /*取得*/
 */
     var text_split = [];
     text_split = text.split("\n");
-    Logger.log(text_split);
     for (var j = 0; j < text_split.length; j++) {
       var ogg = text_split[j].match(/\*\*\[\*\/system:page\-tags\/tag\/(.+)\s(.+)\]\*\*\s{0,2}?\-\s{0,2}?(.+)/);
       // **[*/system:page-tags/tag/需更新 需更新]** - 译文与原文现时的版本不符，需要更新和修订的页面。在译文更新至最新版本后应移除此标签。
