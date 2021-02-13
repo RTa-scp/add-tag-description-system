@@ -56,7 +56,6 @@ function main() {
   jpparse(jpsplitText, catjp);
   enparse(ensplitText, caten);
   cnparse(cnsplitText, catcn);
-  Logger.log(tagscn);
   //コードA1｜スプレッドシートのシート名を取得
   var sheetnamejp = 'JP';
   //コードA2｜スプレッドシートの設定
@@ -487,6 +486,5 @@ function doGet(e) {
   var res = ContentService.createTextOutput();
   res = res.setMimeType(ContentService.MimeType.JAVASCRIPT);
   res = res.setContent(json);
-  Logger.log(res);
   return res
 }
