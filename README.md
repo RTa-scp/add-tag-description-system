@@ -33,11 +33,3 @@ Add tag description system
 2. 拡張機能を開きます。chrome://extensions/
 3. `Developer mode`を有効にします。
 4. `パッケージ化されていない拡張機能を読み込む`をクリックして、`src`というフォルダを選択します。
-
-## ついでに...  
-アクセスが集中すると困りますが、毎日4:05頃に更新されるjsonを置いておきますね。  
-ふとしたタイミングで消失する可能性はありますが、エラーが起きたら数日中に対処するようにはします。  
-なにかあっても自己責任でお願いいたします。  
-JP版[json](https://script.google.com/macros/s/AKfycbwJCGLDJtZeBQ9pmnFfb8xwiLbIA2Wd_8vB4WPiEXAyx214SbM/exec)  
-EN版[json](https://script.google.com/macros/s/AKfycbwJCGLDJtZeBQ9pmnFfb8xwiLbIA2Wd_8vB4WPiEXAyx214SbM/exec?lang=en)  
-CN版[json](https://script.google.com/macros/s/AKfycbwJCGLDJtZeBQ9pmnFfb8xwiLbIA2Wd_8vB4WPiEXAyx214SbM/exec?lang=cn)  
