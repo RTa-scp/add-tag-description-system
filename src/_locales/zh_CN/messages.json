@@ -1,8 +1,0 @@
-{
-  "Name": {
-      "message": "Add tag discription system"
-  },
-  "Description": {
-      "message": "当您将鼠标光标悬停在Wikidot上的标签上时，会显示SCP-JP、SCP-EN和SCP-CN上的标签列表的描述。"
-  }
-}
