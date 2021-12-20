@@ -10,7 +10,7 @@
 
   "permissions": ["storage"],
   "content_scripts": [{
-      "matches": ["http://www.scp-wiki.net/*","http://*.wikidot.com/*","http://www.scpwiki.com/*"],
+      "matches": ["http://*.wikidot.com/*","https://*.wikidot.com/*"],
       "js": ["js/content.js"],
       "run_at": "document_end"
     }],

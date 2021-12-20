@@ -2,9 +2,9 @@ var json;
 var json_trans;
 var DATA_URL;
 var errmsg;
-var JP = 'https://script.google.com/macros/s/AKfycbwJCGLDJtZeBQ9pmnFfb8xwiLbIA2Wd_8vB4WPiEXAyx214SbM/exec';
-var EN = 'https://script.google.com/macros/s/AKfycbwJCGLDJtZeBQ9pmnFfb8xwiLbIA2Wd_8vB4WPiEXAyx214SbM/exec?lang=en';
-var CN = 'https://script.google.com/macros/s/AKfycbwJCGLDJtZeBQ9pmnFfb8xwiLbIA2Wd_8vB4WPiEXAyx214SbM/exec?lang=cn';
+var JP = 'https://raw.githubusercontent.com/RTa-technology/scp/main/scp-jp/tags/tags.json';
+var EN = 'https://raw.githubusercontent.com/RTa-technology/scp/main/scp-wiki/tags/tags.json';
+var CN = 'https://raw.githubusercontent.com/RTa-technology/scp/main/scp-jp/tags/tags.json';
 var catstyle;
 function lang() {
   if (document.documentElement.lang === "en") {
@@ -53,7 +53,8 @@ for (var i = 0; i < length; i++) {
     var element = document.createElement("div");
     var index = getIndex(this.textContent, json, "tag");
     if (index !== -1) {
-      element.innerHTML = json[index].tag + '<br><span style="font-size:0.8em;max-width: unset;"><em>' + json[index].trans + '</em><span style="display:'+catstyle+';max-width: unset;"> (' + json[index].category + ")</span></span><br>" + json[index].discription;
+      let li = (json[index].list!="")? "<li>"+json[index].list.join('</li><li>')+"</li>":"";
+      element.innerHTML = json[index].tag + '<br><span style="font-size:0.8em;max-width: unset;"><em>' + json[index].trans + '</em><span style="display:'+catstyle+';max-width: unset;"> (' + json[index].category + ")</span></span><br>" + json[index].desc+"<ul>"+li+"</ul>";
       element.className = "tooltip";
       if (selected_popcolor == undefined) {
         selected_popcolor = "#333"
